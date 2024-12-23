@@ -1,55 +1,164 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сторінка з Bootstrap</title>
-    <!-- Підключення Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tere App</title>
     <style>
-        /* Мінімальні власні стилі */
         body {
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .content {
-            margin-top: 20px;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f6f6f6;
+        }
+        header .logo {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eef8f0;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .hero .buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #000;
+            border-radius: 5px;
+        }
+        .form-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #f6f6f6;
+        }
+        .form-section input {
+            width: 50%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .benefits {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .benefits h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .benefits .benefit {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .benefits .benefit img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        .benefits .benefit div {
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f6f6f6;
+            font-size: 14px;
+        }
+        footer .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
         }
     </style>
 </head>
 <body>
-
-    <header class="bg-success text-white text-center py-4">
-        <h1>Моя Веб-Сторінка</h1>
+    <header>
+        <div class="logo">Tere</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">How Tere Works</a>
+            <a href="#">Tere Benefits</a>
+            <a href="#">Help Center</a>
+        </nav>
     </header>
 
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Основний Контент</h5>
-                        <p class="card-text">Мене звуть Альбіна. Мені 14 років, і це моя сторінка.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Бокова Панель</h5>
-                        <p class="card-text">Я навчаюсь в економічному технікумі в Польщі</p>
-                    </div>
-                </div>
+    <section class="hero">
+        <h1>DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</h1>
+        <p>It's simple and it's free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty.</p>
+        <div class="buttons">
+            <a href="#">Download</a>
+            <a href="#">Download</a>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <p>Let's go. Get a link to download the app.</p>
+        <input type="text" placeholder="Enter mobile phone number">
+        <button>Apply to Drive</button>
+    </section>
+
+    <section class="benefits">
+        <h2>TERE BENEFITS</h2>
+        <div class="benefit">
+            <img src="icon1.png" alt="Flexible working hours">
+            <div>
+                <h3>01. Flexible working hours</h3>
+                <p>You can decide when, and how much time you want to drive.</p>
             </div>
         </div>
-    </div>
+        <div class="benefit">
+            <img src="icon2.png" alt="Earnings">
+            <div></div>
+                <h3>02. Earnings</h3>
+                <p>By driving with Tere you can earn more.</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <img src="icon3.png" alt="Customer support">
+            <div>
+                <h3>03. Customer support 24/7</h3>
+                <p>Tere is a local service provider and we are proud to support you in your local language 24/7.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p> Моя Веб-Сторінка</p>
+    <footer>
+        <p>Be Our Friend</p>
+        <p>3, Season Park, Jakarta | support@today.co.id | 021 - 111 - 2222</p>
+        <div class="links">
+            <a href="#">Download</a>
+            <a href="#">Download</a>
+        </div>
+        <p>All Rights Reserved Tere by Codemixis 2022</p>
     </footer>
-
-    <!-- Підключення Bootstrap JS та jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
