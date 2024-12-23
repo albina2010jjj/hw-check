@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffd166;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.hero .cta input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero .cta button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature .icon {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.refer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffd166;
+}
+
+.refer button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
