@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Stranger Things</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://s3-alpha-sig.figma.com/img/f2a3/8730/58fb2a6a82f8d9c31b9968ec77ec35bd?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k7YJa8K4lhAaTTL5k0tlGpMXcKY-wAmRI~1GTOyqS~iuPenkQOYTF1ECqb~QIDXZTVjJihYh1pwHwmtpL9Bu~ppPZC5~PlgGP28zQo76t7cRsLvNT51-z52kc3N8I2FCEunIoY~r~~kjuP599EBnxum691e9Uk7LMNqj8cMSeQrvR0NrvQqAUPwCLvUeuwwioI~WxWuwBX7RFgH2z7iBEM70vZfadK31iOdO~8iFTGMQHyJVaaNics-ZAxTC1ok4OETU0pq4Ej3WwQeA2fQkTOl9xsICp~9tNulRajlbhY~uozQQegl4kUWv~XHvQODCbESnuB-jweWJ~n3w1h1iUw__') no-repeat center center/cover;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .header .date {
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 50px 20px;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            margin-bottom: 20px;
+        }
+
+        .rating span {
+            font-size: 24px;
+            color: gold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .stream-now {
+            background-color: red;
+            color: white;
+        }
+
+        .all-episodes {
+            background-color: white;
+            color: black;
+        }
+
+        .popular {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .popular-images {
+            display: flex;
+            gap: 10px;
+        }
+
+        .popular-images img {
+            width: 100px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">NETFLIX</div>
+        <div class="date">Friday July 8th</div>
+    </div>
+    <div class="content">
+        <div class="tags">Drama | Thriller | Supernatural</div>
+        <div class="title">Stranger Things</div>
+        <div class="info">
+            2019 | DIRECTOR: Shawn Levy | seasons: 3 (5 Episodes)
+        </div>
+        <div class="description">
+            In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.
+        </div>
+        <div class="rating">
+            <span>★</span> <span>★</span> <span>★</span> <span>☆</span> <span>☆</span>
+        </div>
+        <div class="buttons">
+            <button class="button stream-now">STREAM NOW</button>
+            <button class="button all-episodes">ALL EPISODES</button>
+        </div>
+        <div class="popular">POPULAR THIS WEEK</div>
+        <div class="popular-images">
+            <img src="https://s3-alpha-sig.figma.com/img/26cc/fbcf/71ca5e8c44f0ad90d629926037373e01?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QNcrQMDxKl375u2zjzRamIMo~3h5-LG0ms5~NYf-ZXn0cv14vCa8mQ-AlqifiqWxcMiBpCrvSW37goMJAu-6K8xNRX7UogkbEvRgDcDIK8EcZ35rgxGClt8~H~oIcAEDhoKadNcDKv~Bg7Sg02nVF~z2p4xbFHm4z3XhnrONxqeK4y0QBDi73ZFHCwooq84wMY1cASxVQ3y52wKRWzParulWFh4lutiWYZyVKM1irvAHUJ052XNSlvya2ROEkKt4jUadeSQ9-UrFgKqVvwDPnnYuiiSVkQKfil7VDvdzK~7htc9z-3dk9b7F-nK0EHDZ5ndG1aQv-IKm3VzFSxKSIg__" alt="Breaking Bad">
+            <img src="https://s3-alpha-sig.figma.com/img/caee/cc47/63be63d9c7890c2b0cd37ec538755bfd?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GmuTtWbMsneRbA9EnuzigC7rZGPmmNvz0nNVh0PZCbDm~uP2AeQsbAR~Yw-lPK4ZZX2U7F8XVCvfm1cYC1D~GeP~ZdbQttB1RTeiL7T007wF-brviw3ljDzLCiE5YshmRDmHIuZiJVELKuaQDe9Bto05V2pJ-Z5I0nEZvB~eiyRqxXcbbO55fDTukhP9EYmNZprXO8~0lRFDesHvkIWtR77eitWDgebHfWVZn8dLJRPT8ImGX6J5ujb5OoJ9VH0x2ZhnmLtcVg~mqg4Ywks4N-~wRL8-RYl6sYZyeibgGKNy9rXVo1yvD7E1CPPBb8hK5NJ5oUj6prHgSQICuyD0zw__" alt="The Rain">
+            <img src="https://s3-alpha-sig.figma.com/img/31c8/c703/bd283096492d779f16023408a2c6a185?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X8aiidZZpQU1LBLw~iWz3Z6JRwu64~1GMeWD433b~viNIjzToeb6Ql0eVaqxBbhZ1lU-qDAkhkNyWupigbxcHJigrc88oM7HUpNqOudYDqaWOp1~FkpGZQQLDLG48kwDU~EFYexz65zknUmaa~WjwP8NR6j6Bmuj-C9GCzI1LLr-mfsSlxc5jXA-rLTXTedGV8VboyvyuqrnFjRYnZ2YtGZONzgxaDvejQBuizDnBEAOYqNZDQG-zpF6jvd0v-7CpP3BfqSONUJzt6eo44mzsI6WZYKa4P5UVruotlWsfCS8n2rWQwtVxYalQYQT84aEot7CUWA3a5mrqzgiELxmeg__" alt="Life in a Year">
+            <img src="https://s3-alpha-sig.figma.com/img/551b/6498/d5cca0b470b6d1ceff265fd5b58d8264?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=he7e6mvWdRlbNn8MCfPjwDTTIqy7miOffD0629QEH99b~j6a4FbckqCYgVWuM4BslSuNZgPzXdWHRW~A-1PT9CANei8iCNYFLCTHpyBZXsd8T47Jn4f-z-PVF0RiiIBHn9RmcHJOuDKqK4V8a17gI-oJXD77YhjUCRM1~plXIrTepA-m6ymWr8acTWJgGUw0yQvdTjevD~jPIoXevcaJ3-jiSdA3lwcie6KzNaNFFkhqtfVAxzNXfkV9sxrRrLxtBKFICn7kcGAzow-~awYHBSpMBETPuFPU1zmXYdKP4v86J-D~rGIREo7yEZ5AvmCpQM3a5TUUkM9aN-SsKM4uWQ__" alt="Money Heist: Korea">
+            <img src="https://s3-alpha-sig.figma.com/img/da69/a5bf/dba0482a776cf0b9bab46abe6cbaeafe?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mL5z~UmlFE2xM1hRVpvUbxjlDRS2xsPHGn6xdHAyAzW6kN~-mHqCNeX67LiCPszvq6zCc6Yr1MMUtIr8ci802XZb9EgMqzvuT~2N8qrFUya5GoMCqu0lUx6oaqA9BBoXrIxmgvkUAe5p8T3lBu-HvWvDPJCsesaPab8t6yFrV-X~Tnipjp0gZWuMVkF2aHxQRNNS5YpVLyUzDYER0XAJE-M6had4QZwsY9ZuESrJFaTsw9fyzHkOe9iH6KSmZpfbGRH1BihUH65I2wn6kf6anBvwulMfpG3eAYU7lDdq6dGIHZxY0iEt~fshviQJgmp7H~T7kP3t-pQOS9XxC9~M0g__" alt="Squid Game">
+        </div>
+    </div>
+</body>
+</html>
