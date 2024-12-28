@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-color: #000;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: relative;
+      background: url('https://s3-alpha-sig.figma.com/img/f2a3/8730/58fb2a6a82f8d9c31b9968ec77ec35bd?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k7YJa8K4lhAaTTL5k0tlGpMXcKY-wAmRI~1GTOyqS~iuPenkQOYTF1ECqb~QIDXZTVjJihYh1pwHwmtpL9Bu~ppPZC5~PlgGP28zQo76t7cRsLvNT51-z52kc3N8I2FCEunIoY~r~~kjuP599EBnxum691e9Uk7LMNqj8cMSeQrvR0NrvQqAUPwCLvUeuwwioI~WxWuwBX7RFgH2z7iBEM70vZfadK31iOdO~8iFTGMQHyJVaaNics-ZAxTC1ok4OETU0pq4Ej3WwQeA2fQkTOl9xsICp~9tNulRajlbhY~uozQQegl4kUWv~XHvQODCbESnuB-jweWJ~n3w1h1iUw__') no-repeat center center/cover;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      color: #E50914;
+      font-weight: bold;
+    }
+
+    .header .date {
+      font-size: 14px;
+    }
+
+    .content {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      max-width: 600px;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .content .meta {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .content .description {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .content .rating {
+      margin-bottom: 20px;
+    }
+
+    .content .rating span {
+      font-size: 18px;
+      color: #FFD700;
+      margin-right: 5px;
+    }
+
+    .content .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .content .buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .content .buttons .stream {
+      background-color: #E50914;
+      color: #fff;
+    }
+
+    .content .buttons .episodes {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .popular {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .popular h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .popular .gallery {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .popular .gallery img {
+      width: 100px;
+      height: 150px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .age-restriction {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #E50914;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="header">
+      <div class="logo">NETFLIX</div>
+      <div class="date">Friday July 8th</div>
+    </div>
+    <div class="content">
+      <div class="tags">Drama | Thriller | Supernatural</div>
+      <h1>Stranger Things</h1>
+      <div class="meta">
+        2019 | DIRECTOR: Shawn Levy | seasons: 3 (5 Episodes)
+      </div>
+      <div class="description">
+        In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.
+      </div>
+      <div class="rating">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+      <div class="buttons">
+        <button class="stream">STREAM NOW</button>
+        <button class="episodes">ALL EPISODES</button>
+      </div>
+    </div>
+    <div class="age-restriction">16+</div>
+  </div>
+
+  <div class="popular">
+    <h2>POPULAR THIS WEEK</h2>
+    <div class="gallery">
+      <img src="https://s3-alpha-sig.figma.com/img/26cc/fbcf/71ca5e8c44f0ad90d629926037373e01?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QNcrQMDxKl375u2zjzRamIMo~3h5-LG0ms5~NYf-ZXn0cv14vCa8mQ-AlqifiqWxcMiBpCrvSW37goMJAu-6K8xNRX7UogkbEvRgDcDIK8EcZ35rgxGClt8~H~oIcAEDhoKadNcDKv~Bg7Sg02nVF~z2p4xbFHm4z3XhnrONxqeK4y0QBDi73ZFHCwooq84wMY1cASxVQ3y52wKRWzParulWFh4lutiWYZyVKM1irvAHUJ052XNSlvya2ROEkKt4jUadeSQ9-UrFgKqVvwDPnnYuiiSVkQKfil7VDvdzK~7htc9z-3dk9b7F-nK0EHDZ5ndG1aQv-IKm3VzFSxKSIg__" alt="Breaking Bad">
+      <img src="https://s3-alpha-sig.figma.com/img/caee/cc47/63be63d9c7890c2b0cd37ec538755bfd?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GmuTtWbMsneRbA9EnuzigC7rZGPmmNvz0nNVh0PZCbDm~uP2AeQsbAR~Yw-lPK4ZZX2U7F8XVCvfm1cYC1D~GeP~ZdbQttB1RTeiL7T007wF-brviw3ljDzLCiE5YshmRDmHIuZiJVELKuaQDe9Bto05V2pJ-Z5I0nEZvB~eiyRqxXcbbO55fDTukhP9EYmNZprXO8~0lRFDesHvkIWtR77eitWDgebHfWVZn8dLJRPT8ImGX6J5ujb5OoJ9VH0x2ZhnmLtcVg~mqg4Ywks4N-~wRL8-RYl6sYZyeibgGKNy9rXVo1yvD7E1CPPBb8hK5NJ5oUj6prHgSQICuyD0zw__" alt="The Rain">
+      <img src="https://s3-alpha-sig.figma.com/img/31c8/c703/bd283096492d779f16023408a2c6a185?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X8aiidZZpQU1LBLw~iWz3Z6JRwu64~1GMeWD433b~viNIjzToeb6Ql0eVaqxBbhZ1lU-qDAkhkNyWupigbxcHJigrc88oM7HUpNqOudYDqaWOp1~FkpGZQQLDLG48kwDU~EFYexz65zknUmaa~WjwP8NR6j6Bmuj-C9GCzI1LLr-mfsSlxc5jXA-rLTXTedGV8VboyvyuqrnFjRYnZ2YtGZONzgxaDvejQBuizDnBEAOYqNZDQG-zpF6jvd0v-7CpP3BfqSONUJzt6eo44mzsI6WZYKa4P5UVruotlWsfCS8n2rWQwtVxYalQYQT84aEot7CUWA3a5mrqzgiELxmeg__" alt="Life in a Year">
+      <img src="https://s3-alpha-sig.figma.com/img/551b/6498/d5cca0b470b6d1ceff265fd5b58d8264?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=he7e6mvWdRlbNn8MCfPjwDTTIqy7miOffD0629QEH99b~j6a4FbckqCYgVWuM4BslSuNZgPzXdWHRW~A-1PT9CANei8iCNYFLCTHpyBZXsd8T47Jn4f-z-PVF0RiiIBHn9RmcHJOuDKqK4V8a17gI-oJXD77YhjUCRM1~plXIrTepA-m6ymWr8acTWJgGUw0yQvdTjevD~jPIoXevcaJ3-jiSdA3lwcie6KzNaNFFkhqtfVAxzNXfkV9sxrRrLxtBKFICn7kcGAzow-~awYHBSpMBETPuFPU1zmXYdKP4v86J-D~rGIREo7yEZ5AvmCpQM3a5TUUkM9aN-SsKM4uWQ__" alt="Money Heist">
+      <img src="https://s3-alpha-sig.figma.com/img/da69/a5bf/dba0482a776cf0b9bab46abe6cbaeafe?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mL5z~UmlFE2xM1hRVpvUbxjlDRS2xsPHGn6xdHAyAzW6kN~-mHqCNeX67LiCPszvq6zCc6Yr1MMUtIr8ci802XZb9EgMqzvuT~2N8qrFUya5GoMCqu0lUx6oaqA9BBoXrIxmgvkUAe5p8T3lBu-HvWvDPJCsesaPab8t6yFrV-X~Tnipjp0gZWuMVkF2aHxQRNNS5YpVLyUzDYER0XAJE-M6had4QZwsY9ZuESrJFaTsw9fyzHkOe9iH6KSmZpfbGRH1BihUH65I2wn6kf6anBvwulMfpG3eAYU7lDdq6dGIHZxY0iEt~fshviQJgmp7H~T7kP3t-pQOS9XxC9~M0g__" alt="Squid Game">
+    </div>
+  </div>
+</body>
+</html>
