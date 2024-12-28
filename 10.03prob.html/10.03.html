@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tere Landing Page</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #009b4d;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .btn-green {
+        background-color: #009b4d;
+    }
+    
+    .btn-black {
+        background-color: #000;
+    }
+    
+    .btn-white {
+        background-color: white;
+        border: 1px solid #000;
+        color: #000;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        margin-bottom: 30px;
+        color: #666;
+    }
+    
+    .hero-image {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    
+    .download-app {
+        background-color: #f9f9f9;
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .download-app p {
+        margin-bottom: 20px;
+    }
+    
+    .download-app input {
+        padding: 10px;
+        width: 60%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .benefits {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .benefit {
+        margin-bottom: 30px;
+    }
+    
+    .benefit h3 {
+        color: #009b4d;
+        margin-bottom: 10px;
+    }
+    
+    .benefit img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-info p,
+    .footer-info a {
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .footer-buttons .btn {
+        margin: 10px;
+    }</style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Tere</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How Tere Works</a></li>
+                    <li><a href="#">Tere Benefits</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-green">Help Center</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Download App, Save Money, Make Friends!</h1>
+            <p>It’s simple and free. Play your part in reducing Carbon Footprint...</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-black">Download</a>
+                <a href="#" class="btn btn-white">Download</a>
+            </div>
+            <img src="https://www.figma.com/design/udPeYbt0FCSACmuDyVJ5qM/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)-(Copy)?node-id=41-72650&t=RrrxerTBgI3fuUkZ-4" alt="Map Illustration" class="hero-image">
+        </div>
+    </section>
+
+    <section class="download-app">
+        <div class="container">
+            <p>Let’s go. Get a link to download the app.</p>
+            <form>
+                <input type="text" placeholder="Enter mobile phone number">
+                <button type="submit" class="btn btn-green">Apply to Drive</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Tere Benefits</h2>
+            <div class="benefit">
+                <h3>01. Flexible working hours</h3>
+                <p>You can decide when, and how much time you want to drive.</p>
+                <img src="https://www.figma.com/design/udPeYbt0FCSACmuDyVJ5qM/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)-(Copy)?node-id=41-73084&t=RrrxerTBgI3fuUkZ-4" alt="Flexible working hours">
+            </div>
+            <div class="benefit">
+                <h3>02. Earnings</h3>
+                <p>By driving with Tere you can earn more.</p>
+                <img src="https://www.figma.com/design/udPeYbt0FCSACmuDyVJ5qM/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)-(Copy)?node-id=41-72921&t=RrrxerTBgI3fuUkZ-4" alt="Earnings">
+            </div>
+            <div class="benefit">
+                <h3>03. Customer support 24/7</h3>
+                <p>Tere is a local service provider and we are proud to support you in your local language.</p>
+                <img src="https://www.figma.com/design/udPeYbt0FCSACmuDyVJ5qM/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)-(Copy)?node-id=41-74362&t=RrrxerTBgI3fuUkZ-4" alt="Customer support">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h3>Be Our Friend</h3>
+                <p>3, Season Park, Jakarta</p>
+                <p><a href="mailto:support@tere.co.id">support@tere.co.id</a></p>
+                <p>021 - 1111 - 2222</p>
+            </div>
+            <div class="footer-buttons">
+                <a href="#" class="btn btn-black">Download</a>
+                <a href="#" class="btn btn-black">Download</a>
+            </div>
+            <p>All Rights Reserved Tere by Codemarks 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
